@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/productImage_cartList"
+                    android:layout_width="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:id="@+id/productName_cartList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/productImage_cartList"
+                    android:textAlignment="center"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/productPrice_cartList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productName_cartList"
+                    android:text="Product Price"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

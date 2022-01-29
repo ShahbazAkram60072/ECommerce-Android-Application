@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:id="@+id/aa"
+        tools:context=".ProductDetailActicity">
+
+        <ImageView
+            android:id="@+id/product_image_detail"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            />
+        <TextView
+            android:id="@+id/product_name_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textColor="#9CA30590"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_below="@id/product_image_detail"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/product_description_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Description"
+            android:textColor="#9CA30590"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_below="@id/product_name_detail"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:id="@+id/rentpriceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/product_description_detail">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent 4 Days="
+                android:textColor="#F30E000C"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/product_Rent_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Price"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#F30E000C"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+          <Button
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_marginLeft="60dp"
+              android:background="@drawable/ic_favorite_black"
+              android:onClick="img_favorite"
+              android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorite"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sizechart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rentpriceLayout"
+            android:layout_marginTop="10dp"
+            android:text="SIZE CHART"
+            android:textColor="#E90E0E"
+            android:textSize="30dp" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/listOfsizechart"
+           android:layout_marginTop="10dp"
+           android:layout_below="@id/sizechart">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:orientation="vertical"
+               android:layout_marginTop="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Size"
+                   android:textSize="17dp"/>
+               <TextView
+                   android:id="@+id/size"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="--"
+                   android:layout_gravity="center"
+                   android:textSize="11dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="7dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Waist"
+                   android:textSize="17dp" />
+               <TextView
+                   android:id="@+id/waist"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="--"
+                   android:layout_gravity="center"
+                   android:textSize="11dp" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="7dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Length"
+                   android:textSize="17dp" />
+               <TextView
+                   android:id="@+id/length"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="--"
+                   android:textSize="11dp"
+                   android:layout_gravity="center"/>
+
+           </LinearLayout>
+       </LinearLayout>
+
+        <Button
+            android:id="@+id/add_product_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add to cart"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/nav_cart"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_below="@id/listOfsizechart"/>
+    </RelativeLayout>
+</ScrollView>
